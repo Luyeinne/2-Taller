@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title> Mis autores </title>
     <link rel="stylesheet" href="{% static 'estilos.css' %}">
 </head>
 <body>
-    <h1>Hola Comunidad</h1>
-    <br>
-    <p>Maldito insecto</p>
-
+    <div class="header">
+        <h1>Hola Comunidad</h1>
+        <br>
+        <p>Estos son nuestros autores</p>
+    </div>
     <hr>
     <ul>
     {% for autor in autores %}
-
     <li>
         <a href="autor/{{autor.id}}">{{autor.nombre}}</a>
     </li>
